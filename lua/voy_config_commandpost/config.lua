@@ -1,13 +1,35 @@
-VOY_GM_CommandPost = {}
+VOY_GM_CommandPost = {} -- This neither
 
-VOY_GM_CommandPost_CISJobs = {
-	[TEAM_GUN] = true,
+VOY_GM_CommandPost_Version = 1 -- Don't touch this.
+
+VOY_GM_CommandPost_TimeClaim = 5 -- Interval of the timer, I don't know how to explain this but if you don't know what this means keep it at 5
+
+VOY_GM_CommandPost_CISJobs = { -- Which teams should claim for CIS?
+	["Gun Dealer"] = true,
+	["Gun Dealer 2"] = true,
+}
+
+VOY_GM_CommandPost_REPJobs = { -- Which teams should not be allowed to claim?
+	["Citizen"] = true,
+	["Citizen 2"] = true,
 }
 
 VOY_GM_CommandPost_Staff = {
 	["superadmin"] = true,
 	["admin"] = true,
 }
+
+--[[
+
+	Main Configuration
+
+--]]
+
+VOY_GM_CommandPost_Announcer = true -- Clone and CIS Announcer
+
+VOY_GM_CommandPost_MachineSounds = true -- Should the Command Post play looping Machine noises?
+
+VOY_GM_CommandPost_Spawn = false -- Should CIS Jobs spawn at CIS Control Points and Vice-Versa?
 
 --[[
 
@@ -59,18 +81,6 @@ VOY_GM_CommandPost_CISVoicelines_Lost = {
 
 --[[
 
-	Stuff
-
---]]
-
-VOY_GM_CommandPost_Announcer = true -- Clone and CIS Announcer
-
-VOY_GM_CommandPost_MachineSounds = true -- Should the Command Post play looping Machine noises?
-
-VOY_GM_CommandPost_Spawn = true -- Should CIS Jobs spawn at CIS Control Points and Vice-Versa?
-
---[[
-
 	Models
 
 --]]
@@ -80,23 +90,3 @@ VOY_GM_CommandPost_NeutralModel = "models/capturepoint/white_none/base.mdl"
 VOY_GM_CommandPost_RepublicModel = "models/capturepoint/blue/republic/republic_b.mdl"
 
 VOY_GM_CommandPost_CISModel = "models/capturepoint/red/cis/cis_r.mdl"
-
---[[
-
-	Language
-
---]]
-
-VOY_GM_CommandPost_LangOne = "You don't have permission to use this Command." -- You don't have permission to use this Command.
-
-VOY_GM_CommandPost_LangTwo = "You aren't looking at a Command Post." -- You aren't looking at a Command Post.
-
-VOY_GM_CommandPost_LangThree = "Command Post" -- Command Post
-
-VOY_GM_CommandPost_LangFour = "Was taken by" -- Was taken by
-
-VOY_GM_CommandPost_LangFive = "Republic" -- Republic
-
-VOY_GM_CommandPost_LangSeven = "CIS" -- CIS
-
-VOY_GM_CommandPost_LangSix = "Forces" -- Forces
