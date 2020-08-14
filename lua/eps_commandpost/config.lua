@@ -3,8 +3,6 @@ EPS_CommandPost_Config = {
 
 	AmbientSound = true, -- Should the Command Post play looping Machine noises?
 
-	MaxClaimPoints = 100, -- Max Claim Percentage, 0 - this number
-
 	--[[
 
 		Rewards Configuration
@@ -24,30 +22,25 @@ EPS_CommandPost_Config = {
 			Jobs = {"Gun Dealer", "Gun Dealer 2"},
 			Capture = {"commandpost/cis/claimpost1.wav", "commandpost/cis/claimpost2.wav", "commandpost/cis/claimpost3.wav"}, -- Gained Voice Lines (Announcer VO)
 			Lost = {"commandpost/cis/lostclaimpost1.wav", "commandpost/cis/lostclaimpost2.wav"}, -- Lost Voice Lines (Announcer VO)
-			Max = 25, -- Percentile Form, lower and higher.
-			Minimum = 0, -- Percentile Form, lower and higher.
-			DeathSpawn = true, -- Should this Faction be able to respawn at their claimed command posts.
-			RespawnTime = 5,
-			ShowHud = true,
-			ShowClaim = true,
-
-			ClaimMoney = 0,
-		},
-		["Republic"] = {
-			Color = Color(0,0,255),
-			Model = "models/capturepoint/blue/republic/republic_b.mdl",
-			Jobs = {"Citizen", "Citizen 2"},
-			Capture = {"commandpost/republic/claimpost1.wav", "commandpost/republic/claimpost2.wav", "commandpost/republic/claimpost3.wav"},-- Gained Voice Lines (Announcer VO)
-			Lost = {"commandpost/republic/lostclaimpost1.wav", "commandpost/republic/lostclaimpost2.wav"}, -- Lost Voice Lines (Announcer VO)
-			Max = 100, -- Percentile Form, lower and higher.
-			Minimum = 75, -- Percentile Form, lower and higher.
 			DeathSpawn = true, -- Should this Faction be able to respawn at their claimed command posts.
 			RespawnTime = 5,
 			ShowHud = true,
 			ShowClaim = true,
 
 			ClaimMoney = 200,
+		},
+		["Republic"] = {
+			Color = Color(0,0,160),
+			Model = "models/capturepoint/blue/republic/republic_b.mdl",
+			Jobs = {"Citizen", "Citizen 2"},
+			Capture = {"commandpost/republic/claimpost1.wav", "commandpost/republic/claimpost2.wav", "commandpost/republic/claimpost3.wav"},-- Gained Voice Lines (Announcer VO)
+			Lost = {"commandpost/republic/lostclaimpost1.wav", "commandpost/republic/lostclaimpost2.wav"}, -- Lost Voice Lines (Announcer VO)
+			DeathSpawn = true, -- Should this Faction be able to respawn at their claimed command posts.
+			RespawnTime = 5,
+			ShowHud = true,
+			ShowClaim = true,
 
+			ClaimMoney = 200,
 		},
 		["Neutral"] = {
 			Color = Color(255,255,255),
@@ -55,15 +48,12 @@ EPS_CommandPost_Config = {
 			Jobs = {""},
 			Capture = {""},
 			Lost = {""},
-			Max = 75, -- Percentile Form, lower and higher.
-			Minimum = 50, -- Percentile Form, lower and higher.
 			DeathSpawn = false, -- Should this Faction be able to respawn at their claimed command posts.
 			RespawnTime = 5,
 			ShowHud = true,
 			ShowClaim = false,
 
 			ClaimMoney = 0,
-
 		},
 	},
 }
